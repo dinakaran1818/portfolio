@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card View with Image Hover Effect</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Your custom CSS -->
+  <style>
+    .card {
+      border-radius: 20px; /* Adjust the radius as needed */
+      overflow: hidden; /* Prevents image overflow outside card radius */
+    }
+
+    .card-img {
+      border-radius: 20px; /* Adjust the radius as needed */
+      transition: transform 0.3s ease-in-out; /* Transition effect for scaling */
+    }
+
+    .card-img:hover {
+      transform: scale(1.05); /* Scale the image on hover */
+    }
+
+    .card-img-overlay {
+      border-radius: 20px; /* Adjust the radius as needed */
+    }
+
+    .card-title,
+    .card-text {
+      /* Additional styles for text */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Optional: Adds a text shadow for better visibility */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="card position-relative overflow-hidden">
+    <img class="card-img" src="https://via.placeholder.com/350x150" alt="Card image">
+    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+      <h5 class="card-title text-white text-center">Card Title</h5>
+      <p class="card-text text-white text-center">Some example text. Some example text.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
